@@ -13,9 +13,9 @@ public interface EvenementService {
 
     void saveEvenement(Evenement evn);
 
+    List<Evenement> findById(Long id);
 
     List<Evenement> findAll();
-
 
     void deleteEvenement(long idEvenement);
 }

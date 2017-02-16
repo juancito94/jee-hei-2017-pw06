@@ -20,6 +20,10 @@ public class EvenementServiceImpl implements EvenementService {
     @Inject
     private EvenementDAO evenementDAO;
 
+    public List<Evenement> findById(Long id) {
+        return evenementDAO.findById(id);
+    }
+
     public List<Evenement> findByTitle(String title) {
         return evenementDAO.findByTitle(title);
     }
