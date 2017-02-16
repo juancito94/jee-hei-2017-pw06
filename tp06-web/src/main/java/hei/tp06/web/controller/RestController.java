@@ -32,6 +32,15 @@ public class RestController {
         return evenementService.findById(id);
     }
 
+    @GET
+    @Path("/tp06-web/api/evenements/")
+    public List<Evenement> getEvenenement2(){
+        logger.info("Liste des évenements retournée");
+        return evenementService.findAll();
+    }
+
+    @POST
+    @Path("/tp06-web/api/evenements/")
     public void postEvenement(Evenement evenement) {
         logger.info("Nouveau évenement");
         evenementService.saveEvenement(evenement);
