@@ -35,7 +35,7 @@ public class RestController {
     @GET
     @Path("/tp06-web/api/evenements/")
     public List<Evenement> getEvenenement2(){
-        logger.info("Liste des évenements retournée");
+        logger.info("Liste des évenements");
         return evenementService.findAll();
     }
 
